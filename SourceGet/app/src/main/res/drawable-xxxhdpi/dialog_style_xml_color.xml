@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--形状ring(环形-->
+<!--innerRadiusRation 浮点型，以环的宽度比率来表示内环的半径-->
+<!--thicknessRation 以环的宽度比率来表示环的厚度-->
+<!--useLevel boolean值，如果当做是LevelListDrawable使用时值为true，否则为false.设置为true无渐变。false有渐变色-->
+
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="360">
+    <shape
+        android:innerRadiusRatio="3"
+        android:shape="ring"
+        android:thicknessRatio="8"
+        android:useLevel="false">
+        <gradient
+            android:centerColor="#FFDC35"
+            android:centerY="0.50"
+            android:endColor="#CE0000"
+            android:startColor="#FFFFFF"
+            android:type="sweep"
+            android:useLevel="false" />
+    </shape>
+</rotate>

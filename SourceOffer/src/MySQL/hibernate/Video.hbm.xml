@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="MySQL.hibernate">
+
+	<class name="Video" polymorphism="explicit">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="title" type="string" column="title"></property>
+		<property name="link" type="string" column="link"></property>
+		<property name="type" type="string" column="type"></property>
+	</class>
+
+</hibernate-mapping>

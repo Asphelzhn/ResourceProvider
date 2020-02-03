@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme">
+        <ImageButton
+            android:id="@+id/action_up_btn"
+            style="@style/MSV_ImageButton"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_navigation_arrow_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/files"/>
+        </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#6999"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_localVideo"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/local_video_radio_button_selector"
+            android:text="本地视频"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_localMusic"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/local_music_radio_button_selector"
+            android:text="本地音乐"/>
+    </RadioGroup>
+
+</LinearLayout>

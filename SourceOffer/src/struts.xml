@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.devModel" value="true"/>
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+
+	<!-- 需要将struts-default改为 -->
+	<!-- 供客户端使用 -->
+    <package name="Control" namespace="/Client" extends="json-default">
+        
+        <!-- Get Source -->
+        <action name="getAll" class="Control.SourceHelper" method="getAll">
+            <result type="json"/>
+        </action>
+        
+        <action name="getMusic" class="Control.SourceHelper" method="getMusic">
+            <result type="json"/>
+        </action>
+        
+        <action name="getVideo" class="Control.SourceHelper" method="getVideo">
+            <result type="json"/>
+        </action>
+        
+    </package>
+    
+    <!-- 供浏览器使用 -->
+    <package name="Control2" namespace="/Client" extends="struts-default">
+        
+        <!-- Administrator Operations -->
+        <action name="login" class="Control.AdminHelper" method="login">
+            <result name="true">admin.jsp</result>
+            <result name="false">login.jsp</result>
+        </action>
+        
+        <action name="addAdmin" class="Control.AdminHelper" method="addAdmin">
+            <result name="true">admin.jsp</result>
+            <result name="false">error.jsp</result>
+        </action>        
+        
+        <action name="changePassword" class="Control.AdminHelper" method="changePassword">
+            <result name="true">admin.jsp</result>
+            <result name="false">error.jsp</result>
+        </action>
+        
+        <!-- crawler service -->
+        <action name="crawlAll" class="Control.Crawl" method="crawlAll">
+            <result name="true">/admin.jsp</result>
+            <result name="false">/error.jsp</result>            
+        </action>
+        
+        <action name="crawlMusic" class="Control.Crawl" method="crawlMusic">
+            <result name="true">/admin.jsp</result>
+            <result name="false">/error.jsp</result>
+        </action>
+        
+        <action name="crawlVideo" class="Control.Crawl" method="crawlVideo">
+            <result name="true">/admin.jsp</result>
+            <result name="false">/error.jsp</result>
+        </action>
+        
+    </package>
+      
+</struts>  

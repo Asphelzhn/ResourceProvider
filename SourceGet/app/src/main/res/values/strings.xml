@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">SourceGet</string>
+    <string name="name">欢迎使用！</string>
+    <string name="edit_message">输入</string>
+    <string name="button">搜索</string>
+    <string name="comeback">搜索结果</string>
+    <string name="sure">确定</string>
+    <string name="details">详细信息</string>
+    <string name="downloaddetails">下载信息</string>
+    <string name="action_compose">下载页</string>
+    <string name="search">搜</string>
+    <string name="voicesearch">语音阅读</string>
+    <string name="message">下载进度：</string>
+    <string name="news">欢迎来到新闻页！</string>
+    <string name="newsdetails">详细新闻</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Download">下载</string>
+    <string name="Error">出错啦！</string>
+    <string name="Complete">完成！</string>
+    <string name="title_activity_app_detail">详细信息</string>
+    <string name="title_activity_app">正在下载……</string>
+<string name="title_activity_book_detail">书籍详细信息</string>
+    <string name="search_hint">请输入内容</string>
+<string name="files">本地媒体文件</string>
+    <string name="text_novideo_tip">未找到视频资源</string>
+    <string name="text_nomusic_tip">未找到音乐资源</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="copyright">design &amp; power by hufeifei\n CopyRight © 2016</string>
+    <string name="main_scan">扫描ISBN</string>
+    <string name="communicating">通信中&#8230;</string>
+    <string name="error_message_default">错误详情暂无</string>
+    <string name="error_message_net_exception">网络异常</string>
+    <string name="error_message_book_not_found">图书不存在</string>
+
+    <string name="book_detail_summary_title">内容介绍</string>
+    <string name="book_search_price">比价查询</string>
+    <string name="bookname">书籍信息</string>
+    <string name="bookdetails">比价查询</string>
+    <string name="picturedetails">图片详情</string>
+    <string name="network_unavailable">噢&#8230;连不上网了</string>
+    <string name="search_bar_hint">书名/作者</string>
+    <string name="search_button">搜索</string>
+    <string name="content_description">"豆瓣图书"</string>
+    <string name="robot_name">欢迎使用聊天系统！</string>
+</resources>

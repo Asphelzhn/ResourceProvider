@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016.
+  ~ 个人版权所有
+  ~ kuangmeng.net
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+	android:layout_marginTop="20dp"
+	android:background="#c0c0c0">
+	<TextView 
+	    android:id="@+id/shop"
+		android:layout_marginTop="20dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="32sp"/>
+	<TextView 
+	    android:id="@+id/price"
+		android:layout_marginTop="20dp"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:textSize="16sp"
+	    />
+	<TextView 
+	    android:id="@+id/save"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/price"
+	    android:layout_alignParentRight="true"
+	    android:textSize="16sp"
+	    />
+</RelativeLayout>
